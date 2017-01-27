@@ -91,7 +91,7 @@ class TakkNode:
         # get static map of populated live sensors
 	self.alive=[]
 	for tk in tks:
-		self.alive.append(tk.getAlive())
+		self.alive =tk.getAlive()
 
         num_alive = len(self.alive)
         self.calibration = np.zeros(num_alive) # start with zero-order calibration
